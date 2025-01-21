@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* share item */
+.flex{
+    display: flex;
+}
+
+/* start nav */
+.navbar{
+    max-width: 1300px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.logo{
+    align-items: center;
+    justify-content: center;
+}
+.menu li{
+    list-style: none;
+    
+    padding: 0px 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 600;
+    background: #fea301;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+.side-btn{
+    height: 8px;
+    width: 35px;
+    background-color: #fea301;
+    border-radius: 3px;
+    
+}
+.side-btn-cont{
+    flex-direction: column;
+    gap: 6px;
+    display: none;
+}
+
+
+
+@media screen and (max-width:576px) {
+    
+    .name,
+    .menu,
+    .btn{
+        display: none;
+    }
+    .side-btn-cont{
+        display:block;
+    }
+    .side-btn{
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .navbar{
+        padding: 12px 16px;
+        border-bottom: 1px solid #fea301;
+    }
+}
