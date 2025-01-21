@@ -59,7 +59,39 @@
     gap: 6px;
     display: none;
 }
-
+/* start banner */
+.banner-container{
+    max-width: 1300px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 3.25rem;
+    font-weight: 700px;
+}
+.start{
+    color:#fea301;
+}
+.end{
+    color:#01acfd;
+}
+.description{
+    padding: 24px 0px;
+}
+.container{
+    width: 700px;
+}
+.btn-2{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+/* style="background-color: black ;" */
 
 
 @media screen and (max-width:576px) {
@@ -74,10 +106,28 @@
     }
     .side-btn{
         margin-bottom: 10px;
-        margin-right: 10px;
+        
     }
     .navbar{
         padding: 12px 16px;
         border-bottom: 1px solid #fea301;
+        width: 100%;
+    }
+    /* start banner */
+    .banner-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0px 10px;
+        justify-items: center;
+        width: 100%;
+        
+    }
+    .container,.title,.description,.hero>img{
+        width: 100%;
+        text-align: center;
+    }
+    .title{
+        font-size: 2rem;
+        
     }
 }
