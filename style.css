@@ -146,6 +146,95 @@
     background-color: #fea301;
     color: white;
 }
+/* start stories */
+.stories{
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.story-container{
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.col-left{
+    background-color: wheat;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+.col-left img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.story-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 0px;
+}
+.col-left-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    margin-left: -500px;
+    margin-top: 310px;
+}
+.st-cont{
+    padding: 20px;
+}
+.col-left>img{
+    width: 100%;
+    
+}
+.story-description{
+    width: 500px;
+}
+.col-right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+}
+.short-story{
+    background-color: #efd8d8;
+    height: 300px;
+    border-radius: 10px;
+    color: black;
+}
+.short-story h4{
+    padding: 20px;
+}
+.col-right img{
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.col-right-btn{
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 25px;
+}
+.view-btn{
+    margin: 30px 0px;
+    justify-content: center;
+}
+.st-btn{
+    padding: 15px 30px ;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
 
 @media screen and (max-width:576px) {
     
@@ -187,24 +276,46 @@
         
     }
     /* cart section */
-    section{
-        margin: 20px auto;
-    }
     .carts{
         flex-direction: column;
+        gap: 20px;
         justify-content: center;
-        gap: 10px;
-        
-        
+        align-items: center;
     }
     .cart{
-        margin: 0px 15px;
+        width: 80%;
+        padding: 20px 10px;
+        height: auto;
+        
+    }
+    .cart-container{
+        align-items: center;
         
     }
     .container-title{
         font-size: 1.5rem;
+        text-align: center;
     }
     .aro{
         display: none;
+    }
+    /* story */
+    .col-left{
+        display: none;
+    }
+    .col-right{
+        padding: 0px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .short-story img{
+        width: 100%;
+    }
+    .col-right-btn{
+        width: auto;
+        font-size: 12px;
+       
     }
 }
