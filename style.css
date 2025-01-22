@@ -10,6 +10,11 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+body{
+    width: 100% auto;
+    
 }
 /* share item */
 .flex{
@@ -19,10 +24,10 @@
 /* start nav */
 .navbar{
     max-width: 1300px;
-    margin: 0px auto;
+    
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: px 0px;
 }
 .logo{
     align-items: center;
@@ -249,8 +254,9 @@ footer{
     display: grid;
     grid-template-columns: 350px 250px 250px;
     justify-content: space-around;
-    padding: 120px 0px 170px 0px;
+    padding: 110px 0px 100px 0px;
     background: #01acfd;
+    width: 100%;
 }
 .logo{
     justify-content: flex-start;
@@ -292,9 +298,9 @@ footer{
         
     }
     .navbar{
-        padding: 12px 16px;
+        
         border-bottom: 1px solid #fea301;
-        width: 100%;
+        
     }
     /* start banner */
     .banner-container{
