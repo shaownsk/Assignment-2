@@ -305,6 +305,9 @@ footer{
         width: 100%;
         
     }
+    main{
+        margin: 0px auto;
+    }
     .container,
     .title,
     .description,
@@ -360,7 +363,16 @@ footer{
         margin-left: 5px;
         
     }
+    /* footer */
     footer{
-        
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 100%;
+    }
+    .footer-container{
+        padding: 20px;
+    }
+    .footer-description{
+        width: 90%;
     }
 }
