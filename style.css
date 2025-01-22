@@ -94,7 +94,7 @@
 /* start main cart */
 section{
     justify-content: center;
-    background: linear-gradient();
+    background: url(assets/bg.png);
 }
 .cart-container{
     background-image: url(assets/bg.png);
@@ -116,7 +116,7 @@ section{
 .cart{
     height: 350px;
     width: 300px;
-    background-color: aqua;
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
     padding: 50px 30px;
     border-radius: 10px;
     justify-items: center;
@@ -152,7 +152,7 @@ section{
 }
 /* start stories */
 .stories{
-    background-image: url(assets/bg.png);
+    background-image: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -190,6 +190,7 @@ section{
 }
 .st-cont{
     padding: 20px;
+    
 }
 .col-left>img{
     width: 100%;
@@ -231,7 +232,7 @@ section{
     background-color: green;
 }
 .view-btn{
-    margin: 30px 0px;
+    padding: 30px 0px;
     justify-content: center;
 }
 .st-btn{
@@ -242,6 +243,38 @@ section{
     border: none;
     background-color: black;
     color: white;
+}
+/* fotter */
+footer{
+    display: grid;
+    grid-template-columns: 350px 250px 250px;
+    justify-content: space-around;
+    padding: 120px 0px 170px 0px;
+    background: #01acfd;
+}
+.logo{
+    justify-content: flex-start;
+    padding-bottom: 25px;
+    align-items: center;
+}
+.footer-container{
+    width: 100%;
+}
+.footer-li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.footer-li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.footer-ul{
+    flex-direction: column;
+}
+.footer-logo{
+    padding-top: 20px;
 }
 
 @media screen and (max-width:576px) {
@@ -325,6 +358,9 @@ section{
         padding: 8px 15px;
         font-size: 12px;
         margin-left: 5px;
+        
+    }
+    footer{
         
     }
 }
